@@ -375,3 +375,126 @@ ul {
 .section {
   padding: 2rem 0;
 }
+
+.header {
+  background-image: url(../img/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  padding: 3rem 0 20rem 0;
+}
+.header__search {
+  text-align: center;
+  margin-top: 5rem;
+}
+@media (min-width: 768px) {
+  .header__search {
+    margin-top: 30rem;
+  }
+}
+.header__search-button {
+  background-color: #ffffff;
+  padding: 2rem 4rem;
+  color: #e8505b;
+  margin-top: 1rem;
+  border-radius: 3rem;
+  font-size: 2rem;
+  font-weight: 700;
+  display: block;
+}
+@media (min-width: 768px) {
+  .header__search-button {
+    display: inline-block;
+  }
+}
+
+.form {
+  margin: 5rem auto 2rem auto;
+  background-color: #ffffff;
+  border-radius: 5rem;
+  box-shadow: 0px 3px 7px 0px #686868;
+  padding: 3rem 0;
+}
+@media (min-width: 1024px) {
+  .form {
+    display: flex;
+    justify-content: space-between;
+    max-width: 90rem;
+    padding: 0;
+  }
+}
+.form__field {
+  padding: 1.2rem 2rem;
+}
+@media (min-width: 1024px) {
+  .form__field:nth-child(1) {
+    padding-left: 4rem;
+  }
+  .form__field:nth-child(5) {
+    padding-right: 4rem;
+  }
+}
+.form__field:hover {
+  background-color: #f0f0f0;
+  border-radius: 5rem;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
+}
+.form__label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+.form__input {
+  width: 100%;
+  border: none;
+  color: #686868;
+}
+.form__submit {
+  width: 100%;
+  padding: 0 2rem;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  height: 4rem;
+  border: none;
+  border-radius: 2rem;
+  background-image: radial-gradient(circle, rgb(255, 56, 92) 0%, rgb(189, 30, 89) 100%);
+}
+.form__submit:hover {
+  cursor: pointer;
+}
+
+.bar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .bar__name {
+    color: #ffffff;
+    margin: 0;
+    font-size: 2.4rem;
+  }
+}
+@media (min-width: 768px) {
+  .bar__nav {
+    display: flex;
+    gap: 4rem;
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 768px) {
+  .bar__link {
+    color: #ffffff;
+    font-size: 1.8rem;
+  }
+}
