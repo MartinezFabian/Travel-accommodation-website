@@ -13,5 +13,62 @@
     />
     <link rel="stylesheet" href="build/css/app.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="bar bar__container">
+        <div class="bar__logo">
+          <p class="bar__name">Travel Accommodation</p>
+        </div>
+        <nav class="bar__nav">
+          <a href="#" class="bar__link">Lugares para hospedarte</a>
+          <a href="#" class="bar__link">Experiencias</a>
+          <a href="#" class="bar__link">Experiencias en línea</a>
+        </nav>
+        <nav class="bar__login">
+          <a href="#" class="bar__link">Hazte Anfitrión</a>
+        </nav>
+      </div>
+
+      <form class="form form__container">
+        <div class="form__field">
+          <label for="location" class="form__label">Ubicación</label>
+          <input
+            type="text"
+            id="location"
+            class="form__input"
+            placeholder="¿A donde viajas?"
+            required
+          />
+        </div>
+        <div class="form__field">
+          <label for="check-in" class="form__label">Check-In</label>
+          <input type="date" id="check-in" class="form__input" required />
+        </div>
+        <div class="form__field">
+          <label for="check-out" class="form__label">Check-Out</label>
+          <input type="date" id="check-out" class="form__input" required />
+        </div>
+        <div class="form__field">
+          <label for="guests" class="form__label">Huéspedes </label>
+          <input
+            type="number"
+            min="1"
+            max="10"
+            id="guests"
+            class="form__input"
+            placeholder="¿Cuántos?"
+            required
+          />
+        </div>
+        <div class="form__field">
+          <input type="submit" value="Buscar" class="form__submit" />
+        </div>
+      </form>
+
+      <div class="header__search header__container">
+        <p class="header__search-label">¿No sabes donde ir?</p>
+        <a class="headeer__search-button" href="#">Búsqueda Flexible</a>
+      </div>
+    </header>
+  </body>
 </html>
