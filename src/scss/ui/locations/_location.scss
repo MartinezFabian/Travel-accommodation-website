@@ -1,0 +1,14 @@
+@use "../../base/variables" as v;
+@use "../../base/mixins" as m;
+
+.location {
+  scroll-snap-align: center; /* centra el contenido al dar scroll */
+
+  &__name {
+    text-align: center;
+  }
+
+  &__image {
+    border-radius: 1.2rem;
+  }
+}

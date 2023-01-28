@@ -543,3 +543,43 @@ ul {
   font-size: 1.6rem;
   color: #686868;
 }
+
+.locations__heading {
+  text-align: center;
+}
+.locations__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 30rem);
+  -webkit-column-gap: 4rem;
+     -moz-column-gap: 4rem;
+          column-gap: 4rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+}
+@media (min-width: 768px) {
+  .locations__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+  }
+}
+@media (min-width: 1024px) {
+  .locations__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.location {
+  scroll-snap-align: center; /* centra el contenido al dar scroll */
+}
+.location__name {
+  text-align: center;
+}
+.location__image {
+  border-radius: 1.2rem;
+}
