@@ -333,6 +333,10 @@ a {
   text-decoration: none;
 }
 
+[class$=__heading] {
+  margin: 2rem 0;
+}
+
 html {
   box-sizing: border-box;
   font-size: 62.5%; /* 1rem = 10px */
@@ -497,4 +501,45 @@ ul {
     color: #ffffff;
     font-size: 1.8rem;
   }
+}
+
+.destinations__heading {
+  text-align: center;
+}
+.destinations__grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+@media (min-width: 768px) {
+  .destinations__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .destinations__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.destination {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+}
+.destination__image {
+  width: 14rem;
+}
+.destination__name {
+  font-size: 2rem;
+}
+.destination__distance {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #686868;
 }
