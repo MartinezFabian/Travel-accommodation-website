@@ -1,10 +1,11 @@
 // compilar Sass
 
 //dependencias CSS Y Sass
-const { src, dest, watch, series } = require("gulp");
+const { src, dest, watch, series, parallel } = require("gulp");
 const sass = require("gulp-sass")(require("sass"));
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
+const cssnano = require("cssnano");
 
 //dependencias Imagenes
 const imagemin = require("gulp-imagemin");
@@ -15,7 +16,7 @@ function css(done) {
   // identificar archivo scss, luego compilarlo y por ultimo guardar el .css
   src("src/scss/app.scss")
     .pipe(sass())
-    .pipe(postcss([autoprefixer()]))
+    .pipe(postcss([autoprefixer(), cssnano()]))
     .pipe(dest("build/css"));
 
   done(); // indica que aqui acaba la tarea
