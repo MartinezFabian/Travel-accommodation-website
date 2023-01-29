@@ -506,6 +506,11 @@ ul {
 .destinations__heading {
   text-align: center;
 }
+@media (min-width: 768px) {
+  .destinations__heading {
+    text-align: left;
+  }
+}
 .destinations__grid {
   display: grid;
   gap: 2rem;
@@ -546,6 +551,11 @@ ul {
 
 .locations__heading {
   text-align: center;
+}
+@media (min-width: 768px) {
+  .locations__heading {
+    text-align: left;
+  }
 }
 .locations__grid {
   display: grid;
@@ -647,6 +657,11 @@ ul {
 
 .experiences__heading {
   text-align: center;
+}
+@media (min-width: 768px) {
+  .experiences__heading {
+    text-align: left;
+  }
 }
 .experiences__list {
   display: grid;

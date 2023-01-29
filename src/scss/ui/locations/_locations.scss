@@ -4,6 +4,10 @@
 .locations {
   &__heading {
     text-align: center;
+
+    @include m.tablet {
+      text-align: left;
+    }
   }
 
   &__grid {
