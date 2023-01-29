@@ -644,3 +644,41 @@ ul {
     display: inline-block;
   }
 }
+
+.experiences__heading {
+  text-align: center;
+}
+.experiences__list {
+  display: grid;
+  grid-template-columns: repeat(3, 30rem);
+  -webkit-column-gap: 4rem;
+     -moz-column-gap: 4rem;
+          column-gap: 4rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+}
+@media (min-width: 768px) {
+  .experiences__list {
+    overflow: hidden;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.experience {
+  scroll-snap-align: center; /* centra el contenido al dar scroll */
+}
+.experience__image {
+  border-radius: 1.2rem;
+}
+.experience__title {
+  margin: 1.2rem 0;
+  font-weight: 700;
+}
+.experience__description {
+  font-size: 1.8rem;
+  margin: 0;
+}
