@@ -583,3 +583,64 @@ ul {
 .location__image {
   border-radius: 1.2rem;
 }
+
+.host {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 5rem;
+  padding: 10rem 2rem;
+  width: 100%;
+  background-image: linear-gradient(to top, #000 40%, transparent 60%), url(../img/anfitrion.jpg);
+  background-position: center;
+  background-repeat: repeat, no-repeat;
+  background-size: 100%, 110rem;
+}
+@media (min-width: 768px) {
+  .host {
+    grid-template-rows: unset;
+    background-image: linear-gradient(to right, #000 50%, transparent 60%), url(../img/anfitrion.jpg);
+    background-position: center, right;
+    background-size: 100%, 82rem;
+    padding: 10rem 5rem;
+  }
+}
+.host__content {
+  grid-row: 2/3;
+}
+.host__heading {
+  color: #ffffff;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .host__heading {
+    text-align: left;
+  }
+}
+.host__text {
+  color: #ffffff;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .host__text {
+    max-width: 50%;
+    text-align: left;
+  }
+}
+.host__link {
+  background-color: #ffffff;
+  padding: 2rem 4rem;
+  color: #000;
+  margin-top: 1rem;
+  border-radius: 3rem;
+  font-size: 2rem;
+  font-weight: 700;
+  display: block;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .host__link {
+    display: inline-block;
+  }
+}
